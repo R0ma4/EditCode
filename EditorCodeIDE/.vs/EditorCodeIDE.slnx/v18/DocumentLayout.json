@@ -1,34 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\EditorCodeIDE\\",
+  "WorkspaceRootPath": "D:\\EditCode\\EditorCodeIDE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|D:\\EditorCodeIDE\\editorcodeide\\pages\\pageeditor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pages\\pageeditor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|d:\\editcode\\editorcodeide\\editorcodeide\\pack-editcode\\language-redactors\\languagecshaerp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pack-editcode\\language-redactors\\languagecshaerp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|d:\\editorcodeide\\editorcodeide\\pack-editcode\\projectsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|d:\\editcode\\editorcodeide\\editorcodeide\\pages\\windoweditcodeide.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pages\\windoweditcodeide.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|d:\\editcode\\editorcodeide\\editorcodeide\\pages\\windoweditcodeide.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pages\\windoweditcodeide.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|D:\\EditCode\\EditorCodeIDE\\editorcodeide\\pack-editcode\\projectsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pack-editcode\\projectsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|D:\\EditorCodeIDE\\editorcodeide\\pack-editcode\\codeexecutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|D:\\EditCode\\EditorCodeIDE\\editorcodeide\\pack-editcode\\codeexecutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pack-editcode\\codeexecutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|d:\\editorcodeide\\editorcodeide\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|D:\\EditCode\\EditorCodeIDE\\editorcodeide\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|D:\\EditorCodeIDE\\editorcodeide\\pages\\pageeditor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pages\\pageeditor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|D:\\EditCode\\EditorCodeIDE\\editorcodeide\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|D:\\EditorCodeIDE\\editorcodeide\\pages\\pagemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|D:\\EditCode\\EditorCodeIDE\\editorcodeide\\pages\\pagemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pages\\pagemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|D:\\EditorCodeIDE\\editorcodeide\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|d:\\editcode\\editorcodeide\\editorcodeide\\pages\\windowcreateproject.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pages\\windowcreateproject.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,85 +58,113 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "languageCShaerp.cs",
+              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pack-EditCode\\language-redactors\\languageCShaerp.cs",
+              "RelativeDocumentMoniker": "EditorCodeIDE\\Pack-EditCode\\language-redactors\\languageCShaerp.cs",
+              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pack-EditCode\\language-redactors\\languageCShaerp.cs",
+              "RelativeToolTip": "EditorCodeIDE\\Pack-EditCode\\language-redactors\\languageCShaerp.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T16:38:48.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WindowCreateProject.xaml",
+              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\WindowCreateProject.xaml",
+              "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\WindowCreateProject.xaml",
+              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\WindowCreateProject.xaml",
+              "RelativeToolTip": "EditorCodeIDE\\Pages\\WindowCreateProject.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T14:51:40.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "WindowEditCodeIDE.xaml.cs",
+              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml.cs",
+              "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml.cs",
+              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml.cs",
+              "RelativeToolTip": "EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml.cs",
+              "ViewState": "AgIAAGoBAAAAAAAAAAAiwHIBAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T12:47:45.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WindowEditCodeIDE.xaml",
+              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml",
+              "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml",
+              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml",
+              "RelativeToolTip": "EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T12:47:40.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ProjectSystem.cs",
-              "DocumentMoniker": "D:\\EditorCodeIDE\\EditorCodeIDE\\Pack-EditCode\\ProjectSystem.cs",
+              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pack-EditCode\\ProjectSystem.cs",
               "RelativeDocumentMoniker": "EditorCodeIDE\\Pack-EditCode\\ProjectSystem.cs",
-              "ToolTip": "D:\\EditorCodeIDE\\EditorCodeIDE\\Pack-EditCode\\ProjectSystem.cs",
+              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pack-EditCode\\ProjectSystem.cs",
               "RelativeToolTip": "EditorCodeIDE\\Pack-EditCode\\ProjectSystem.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T08:31:58.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "PageMain.xaml",
-              "DocumentMoniker": "D:\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageMain.xaml",
+              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageMain.xaml",
               "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\PageMain.xaml",
-              "ToolTip": "D:\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageMain.xaml",
+              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageMain.xaml",
               "RelativeToolTip": "EditorCodeIDE\\Pages\\PageMain.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-26T06:55:31.736Z"
+              "WhenOpened": "2025-11-26T06:55:31.736Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CodeExecutionService.cs",
-              "DocumentMoniker": "D:\\EditorCodeIDE\\EditorCodeIDE\\Pack-EditCode\\CodeExecutionService.cs",
+              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pack-EditCode\\CodeExecutionService.cs",
               "RelativeDocumentMoniker": "EditorCodeIDE\\Pack-EditCode\\CodeExecutionService.cs",
-              "ToolTip": "D:\\EditorCodeIDE\\EditorCodeIDE\\Pack-EditCode\\CodeExecutionService.cs",
+              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pack-EditCode\\CodeExecutionService.cs",
               "RelativeToolTip": "EditorCodeIDE\\Pack-EditCode\\CodeExecutionService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAYwCsAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T03:56:31.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PageEditor.xaml",
-              "DocumentMoniker": "D:\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageEditor.xaml",
-              "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\PageEditor.xaml",
-              "ToolTip": "D:\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageEditor.xaml",
-              "RelativeToolTip": "EditorCodeIDE\\Pages\\PageEditor.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-25T19:05:59.251Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\EditorCodeIDE\\EditorCodeIDE\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\MainWindow.xaml",
               "RelativeDocumentMoniker": "EditorCodeIDE\\MainWindow.xaml",
-              "ToolTip": "D:\\EditorCodeIDE\\EditorCodeIDE\\MainWindow.xaml",
+              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\MainWindow.xaml",
               "RelativeToolTip": "EditorCodeIDE\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-25T18:42:59.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PageEditor.xaml.cs",
-              "DocumentMoniker": "D:\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageEditor.xaml.cs",
-              "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\PageEditor.xaml.cs",
-              "ToolTip": "D:\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageEditor.xaml.cs",
-              "RelativeToolTip": "EditorCodeIDE\\Pages\\PageEditor.xaml.cs",
-              "ViewState": "AgIAAGoBAAAAAAAAAAAUwH4BAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T18:39:25.496Z",
+              "WhenOpened": "2025-11-25T18:42:59.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "PageMain.xaml.cs",
-              "DocumentMoniker": "D:\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageMain.xaml.cs",
+              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageMain.xaml.cs",
               "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\PageMain.xaml.cs",
-              "ToolTip": "D:\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageMain.xaml.cs",
+              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageMain.xaml.cs",
               "RelativeToolTip": "EditorCodeIDE\\Pages\\PageMain.xaml.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowDcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwBUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T18:30:19.899Z",
               "EditorCaption": ""

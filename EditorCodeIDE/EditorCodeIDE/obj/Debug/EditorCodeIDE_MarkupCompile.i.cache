@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\EditorCodeIDE\EditorCodeIDE\obj\Debug\
+D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\
 EditorCodeIDE
 none
 false
 DEBUG;TRACE
-D:\EditorCodeIDE\EditorCodeIDE\App.xaml
-427989785
+D:\EditCode\EditorCodeIDE\EditorCodeIDE\App.xaml
+5-654124721
 6231569058683
-11-1268635601
-47304397250
-CreateFile.xaml;MainWindow.xaml;Pages\PageEditor.xaml;Pages\PageMain.xaml;
+13-952150216
+48-1759554536
+CreateFile.xaml;MainWindow.xaml;Pages\PageMain.xaml;Pages\WindowCreateProject.xaml;Pages\WindowEditCodeIDE.xaml;
 
-True
+False
 

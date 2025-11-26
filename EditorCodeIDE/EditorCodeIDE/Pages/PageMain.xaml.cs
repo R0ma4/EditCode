@@ -41,6 +41,7 @@ namespace EditorCodeIDE.Pages
                     {
                         System.Windows.Forms.OpenFileDialog openFileDialog = new System.Windows.Forms.OpenFileDialog();
                         openFileDialog.DefaultExt = @"D:\EditorCodeIDE\TestProgect";
+                        Pages.WindowEditCodeIDE windowEditCodeIDE = new Pages.WindowEditCodeIDE();
 
                         openFileDialog.ShowDialog();
 
@@ -50,81 +51,64 @@ namespace EditorCodeIDE.Pages
 
                             if (openFileDialog.FileName.Contains(".py"))
                             {
-                                lan = "\'py\'";
-                                Pages.PageEditor pageEditor = new Pages.PageEditor(lan);
-                                pageEditor.TextEditor.Text = File.ReadAllText(openFileDialog.FileName);
-
-                                pageEditor.Filer.Header = openFileDialog;
-                                pageEditor.PathFile = openFileDialog.FileName;
-
-                                pageEditor.mainWindow = MainWindowShow;
-
+                                windowEditCodeIDE.Title = openFileDialog.FileName;
+                                windowEditCodeIDE.TextEditor.Text = File.ReadAllText(openFileDialog.FileName);
+                                windowEditCodeIDE.CODElanguage = Pack_EditCode.CodeExecutionService.Language.Python;
+                                windowEditCodeIDE.InitializeEditor();
                                 
-                                MainWindowShow.Title = openFileDialog.FileName;
-                                MainWindowShow.MainControlPage.Content = pageEditor;
-
-                                MainWindowShow.Show();
+                                windowEditCodeIDE.Show();
                             }
                             else if (openFileDialog.FileName.Contains(".cs"))
                             {
-                                lan = "\'c#\'";
-                                Pages.PageEditor pageEditor = new Pages.PageEditor(lan);
-                                pageEditor.TextEditor.Text = File.ReadAllText(openFileDialog.FileName);
-                                MainWindowShow.Title = openFileDialog.FileName;
-                                pageEditor.Filer.Header = openFileDialog.Title;
+                                windowEditCodeIDE.Title = openFileDialog.FileName;
+                                windowEditCodeIDE.TextEditor.Text = File.ReadAllText(openFileDialog.FileName);
+                                windowEditCodeIDE.CODElanguage = Pack_EditCode.CodeExecutionService.Language.CSharp;
+                                windowEditCodeIDE.InitializeEditor();
 
-                                MainWindowShow.MainControlPage.Content = pageEditor;
+                                windowEditCodeIDE.Show();
 
-                                MainWindowShow.Show();
                             }
                             else if (openFileDialog.FileName.Contains(".cpp"))
                             {
-                                lan = "\'c++\'";
-                                Pages.PageEditor pageEditor = new Pages.PageEditor(lan);
-                                pageEditor.TextEditor.Text = File.ReadAllText(openFileDialog.FileName);
-                                MainWindowShow.Title = openFileDialog.FileName;
-                                MainWindowShow.MainControlPage.Content = pageEditor;
+                                windowEditCodeIDE.Title = openFileDialog.FileName;
+                                windowEditCodeIDE.TextEditor.Text = File.ReadAllText(openFileDialog.FileName);
+                                windowEditCodeIDE.CODElanguage = Pack_EditCode.CodeExecutionService.Language.Cpp;
+                                windowEditCodeIDE.InitializeEditor();
 
-                                MainWindowShow.Show();
+                                windowEditCodeIDE.Show();
+
                             }
                             else if (openFileDialog.FileName.Contains(".js"))
                             {
-                                lan = "\'js\'";
-                                Pages.PageEditor pageEditor = new Pages.PageEditor(lan);
-                                pageEditor.TextEditor.Text = File.ReadAllText(openFileDialog.FileName);
-                                MainWindowShow.Title = openFileDialog.FileName;
-                                MainWindowShow.MainControlPage.Content = pageEditor;
+                                windowEditCodeIDE.Title = openFileDialog.FileName;
+                                windowEditCodeIDE.TextEditor.Text = File.ReadAllText(openFileDialog.FileName);
+                                windowEditCodeIDE.CODElanguage = Pack_EditCode.CodeExecutionService.Language.JavaScript;
+                                windowEditCodeIDE.InitializeEditor();
 
-                                MainWindowShow.Show();
+                                windowEditCodeIDE.Show();
+
                             }
                             else if (openFileDialog.FileName.Contains(".sql"))
                             {
                                 lan = "\'sql\'";
-                                Pages.PageEditor pageEditor = new Pages.PageEditor(lan);
-                                pageEditor.TextEditor.Text = File.ReadAllText(openFileDialog.FileName);
-                                MainWindowShow.Title = openFileDialog.FileName;
-                                MainWindowShow.MainControlPage.Content = pageEditor;
-
-                                MainWindowShow.Show();
+                           
                             }
                             else if (openFileDialog.FileName.Contains(".txt"))
                             {
                                 lan = "\'txt\'";
-                                Pages.PageEditor pageEditor = new Pages.PageEditor(lan);
-                                pageEditor.TextEditor.Text = File.ReadAllText(openFileDialog.FileName);
-                                MainWindowShow.Title = openFileDialog.FileName;
-                                MainWindowShow.MainControlPage.Content = pageEditor;
-
-                                MainWindowShow.Show();
+                              
                             }
 
                         }
                     }
                     else if (button.Name == "OpenEditorBtn")
                     {
-                        Pages.PageEditor pageEditor = new Pages.PageEditor();
-                        MainWindowShow.MainControlPage.Content = pageEditor;
-                        MainWindowShow.Show();
+                        Pages.WindowEditCodeIDE windowEditCodeIDE = new Pages.WindowEditCodeIDE();
+                        windowEditCodeIDE.Title = "Новый файл пользователя *";
+
+
+
+                        windowEditCodeIDE.ShowDialog();
                     }
                 }
                 catch (Exception ex)

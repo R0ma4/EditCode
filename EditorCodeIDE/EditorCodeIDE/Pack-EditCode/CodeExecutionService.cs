@@ -9,12 +9,23 @@ using Microsoft.CodeAnalysis.Scripting;
 using IronPython.Hosting;
 using Jint;
 
+// Добавляем необходимые using для компиляции
+using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp;
+using System.Reflection;
+
+// оброботчики
+using EditorCodeIDE.Pack_EditCode.language_redactors.CSarp;
+
 namespace EditorCodeIDE.Pack_EditCode
 {
     public class CodeExecutionService
     {
+        languageCShaerp languageCShaerp = new languageCShaerp();
         public enum Language
         {
+            Text,
+            SQL,
             CSharp,
             Cpp,
             Python,
@@ -26,7 +37,7 @@ namespace EditorCodeIDE.Pack_EditCode
             switch (language)
             {
                 case Language.CSharp:
-                    return await ExecuteCSharpAsync(code);
+                    return await languageCShaerp.ExecuteCSharpAsync(code);
                 case Language.Cpp:
                     return await ExecuteCppAsync(code);
                 case Language.Python:
@@ -34,46 +45,13 @@ namespace EditorCodeIDE.Pack_EditCode
                 case Language.JavaScript:
                     return await ExecuteJavaScriptAsync(code);
                 default:
-                    return "Unsupported language";
+                    return "не изветсный пораметор рброботки!";
             }
         }
 
+       
 
-        // C# через Roslyn
-        private async Task<string> ExecuteCSharpAsync(string code)
-        {
-            try
-            {
-                // Перехватываем вывод консоли
-                var originalOutput = Console.Out;
-                using (var writer = new StringWriter())
-                {
-                    Console.SetOut(writer);
-
-                    var script = CSharpScript.Create(code);
-                    var result = await script.RunAsync();
-
-                    // Если есть возвращаемое значение, добавляем его к выводу
-                    string output = writer.ToString();
-                    if (result?.ReturnValue != null)
-                    {
-                        output += result.ReturnValue.ToString();
-                    }
-
-                    Console.SetOut(originalOutput);
-
-                    return string.IsNullOrEmpty(output) ? "Код выполнен (без вывода)" : output;
-                }
-            }
-            catch (CompilationErrorException ex)
-            {
-                return string.Join("\n", ex.Diagnostics);
-            }
-            catch (Exception ex)
-            {
-                return $"Ошибка выполнения: {ex.Message}";
-            }
-        }
+        #region Other Languages Execution - Остальные языки без изменений
 
         // C++ через внешний компилятор
         private async Task<string> ExecuteCppAsync(string code)
@@ -84,8 +62,8 @@ namespace EditorCodeIDE.Pack_EditCode
             }
 
             var tempDir = Path.GetTempPath();
-            var cppFile = Path.Combine(tempDir, "temp_code.cpp");
-            var exeFile = Path.Combine(tempDir, "temp_code.exe");
+            var cppFile = Path.Combine(tempDir, $"temp_code_{Guid.NewGuid()}.cpp");
+            var exeFile = Path.Combine(tempDir, $"temp_code_{Guid.NewGuid()}.exe");
 
             try
             {
@@ -112,7 +90,7 @@ namespace EditorCodeIDE.Pack_EditCode
 
                 if (compileProcess.ExitCode != 0)
                 {
-                    return $"Compilation Error:\n{compileOutput}";
+                    return $"Ошибки компиляции C++:\n{compileOutput}";
                 }
 
                 // Запускаем скомпилированную программу
@@ -133,17 +111,15 @@ namespace EditorCodeIDE.Pack_EditCode
                 string error = await ReadStreamAsync(runProcess.StandardError);
                 runProcess.WaitForExit();
 
-                return string.IsNullOrEmpty(error) ? output : $"Error: {error}\nOutput: {output}";
+                return string.IsNullOrEmpty(error) ? output : $"Ошибка: {error}\nВывод: {output}";
             }
             catch (Exception ex)
             {
-                return $"C++ Execution Error: {ex.Message}";
+                return $"Ошибка выполнения C++: {ex.Message}";
             }
             finally
             {
-                // Удаляем временные файлы
-                try { if (File.Exists(cppFile)) File.Delete(cppFile); } catch { }
-                try { if (File.Exists(exeFile)) File.Delete(exeFile); } catch { }
+                languageCShaerp.CleanupTempFiles(cppFile, exeFile);
             }
         }
 
@@ -172,12 +148,13 @@ namespace EditorCodeIDE.Pack_EditCode
                     outputStream.Position = 0;
                     using (var reader = new StreamReader(outputStream))
                     {
-                        return reader.ReadToEnd();
+                        string result = reader.ReadToEnd();
+                        return string.IsNullOrEmpty(result) ? "Python код выполнен" : result;
                     }
                 }
                 catch (Exception ex)
                 {
-                    return $"Python Error: {ex.Message}";
+                    return $"Ошибка Python: {ex.Message}";
                 }
             });
         }
@@ -201,11 +178,12 @@ namespace EditorCodeIDE.Pack_EditCode
                     });
 
                     engine.Execute(code);
-                    return output.Length > 0 ? output.ToString() : "JavaScript executed (no output)";
+                    string result = output.ToString();
+                    return string.IsNullOrEmpty(result) ? "JavaScript код выполнен" : result;
                 }
                 catch (Exception ex)
                 {
-                    return $"JavaScript Error: {ex.Message}";
+                    return $"Ошибка JavaScript: {ex.Message}";
                 }
             });
         }
@@ -234,5 +212,7 @@ namespace EditorCodeIDE.Pack_EditCode
                 return false;
             }
         }
+
+        #endregion
     }
 }
