@@ -1,0 +1,20 @@
+<project h:Name = 'my_test_project' h:language  = 'pyhton' h:Code = 'UNI8' version = '1.0' h:Type = 'Console | <Pyhton_Console>' >
+	<Direct = 'D:\EditCode\EditorCodeIDE\TestProgect\MyTestProject'>
+        <MainFile = 'D:\EditCode\EditorCodeIDE\TestProgect\MyTestProject\Scrept1.py'/>
+        <File1 = 'D:\EditCode\EditorCodeIDE\TestProgect\MyTestProject\Scrept2.py'/>
+    </Direct>
+		<settnega>
+			<language='RU - ru'/>
+			<Pakets='true'/>
+			<Git='false'/>
+		</settnega>
+	<Addons>
+		<User>
+
+        </User>				
+        <Standart>	
+            <FrameWorkAPI version='0.0.1'/>
+			<EditCodeIDE version='0.0.1'/>
+		</Standart>
+	</Addons>
+</project>

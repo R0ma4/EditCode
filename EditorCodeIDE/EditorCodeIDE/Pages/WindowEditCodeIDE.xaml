@@ -1,14 +1,14 @@
 ﻿<Window x:Class="EditorCodeIDE.Pages.WindowEditCodeIDE"
         xmlns:avalon="http://icsharpcode.net/sharpdevelop/avalonedit"
        
-        
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EditorCodeIDE.Pages"
         mc:Ignorable="d"
-        Title="WindowEditCodeIDE" Height="500" Width="900" WindowState="Maximized" KeyDown="EventKeyDowonDater"
+        Name="MainWindowEdit"
+        Title="WindowEditCodeIDE" Height="700" Width="1080" WindowState="Maximized" KeyDown="EventKeyDowonDater" Closed="MainWindowEdit_Closed" Closing="MainWindowEdit_Closing"
         >
     <Grid Background="#FF232323" Name="MainGrid">
         <Grid.RowDefinitions>
@@ -32,13 +32,13 @@
             <!-- Редактор -->
             <ColumnDefinition Width="5"/>
             <!-- Разделитель -->
-            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="150"/>
             <!-- Правая панель -->
         </Grid.ColumnDefinitions>
 
         <!-- Меню управление -->
         <Menu VerticalAlignment="Top" Grid.Row="0" Grid.ColumnSpan="5" Foreground="White" Background="#FF2D2D30">
-            <MenuItem Header="Файлы" Foreground="White" Background="#FF2D2D30">
+            <MenuItem Header="Файлы" Foreground="White" Background="#FF2D2D30" Click="MenuItem_Click_1">
                 <MenuItem Header="Создать" Foreground="White" Background="#FF2D2D30">
                     <MenuItem Header="Файл .cs" Foreground="White" Background="#FF2D2D30"/>
                     <MenuItem Header="Файл .cpp" Foreground="White" Background="#FF2D2D30"/>
@@ -78,7 +78,7 @@
                 <MenuItem x:Name="OpenProject" Header="Открыть" Foreground="White" Background="#FF2D2D30"/>
                 <MenuItem x:Name="EndProject" Header="Последнее" Foreground="White" Background="#FF2D2D30"/>
             </MenuItem >
-            <MenuItem Header="Запустить" Foreground="White" Background="#FF2D2D30" Click="RunScrept" />
+            <MenuItem Header="Запустить" Foreground="White" Background="#FF2D2D30" Click="RunScrept" Icon="D:\EditCode\EditorCodeIDE\EditorCodeIDE\Pack-EditCode\img\play-imag004.png" />
             <MenuItem Header="Терминал" Foreground="White" Background="#FF2D2D30">
                 <MenuItem Header="Открыть Общий Терменал" Foreground="White" Background="#FF2D2D30"/>
                 <MenuItem Header="Открыть Терменал Редактора" Foreground="White" Background="#FF2D2D30"/>
@@ -89,26 +89,42 @@
             </MenuItem>
         </Menu>
 
+
         <!-- Левая панель с кнопками и деревом проекта -->
+
         <DockPanel Grid.Row="1" Grid.Column="0" Background="#FF252526">
+
             <!-- Вертикальные кнопки -->
-            <StackPanel DockPanel.Dock="Left" Width="50" Background="#FF2D2D30">
-                <Button x:Name="FileProject" Content="📁" Width="40" Height="40" Margin="5" 
-                     ToolTip="Обозреватель решений" Background="Transparent" BorderBrush="Transparent" Foreground="White"/>
-                <Button x:Name="Seach" Content="🔍" Width="40" Height="40" Margin="5" 
-                     ToolTip="Поиск" Background="Transparent" BorderBrush="Transparent" Foreground="White"/>
-                <Button x:Name="RunAndDebug" Content="▶️" Width="40" Height="40" Margin="5" 
-                     ToolTip="Запуск и отладка" Background="Transparent" BorderBrush="Transparent" Foreground="White"/>
-                <Button x:Name="Pakes" Content="📦" Width="40" Height="40" Margin="5" 
-                     ToolTip="Пакеты" Background="Transparent" BorderBrush="Transparent" Foreground="White"/>
+            <StackPanel DockPanel.Dock="Left" Width="50" Background="#FF2D2D30" HorizontalAlignment="Left">
+                <Button x:Name="FileProject" Content=" " Width="40" Height="40" Margin="5" ToolTip="Обозреватель решений"  BorderBrush="Transparent" Foreground="White" Click="ClickButton">
+                    <Button.Background>
+                        <ImageBrush ImageSource="D:\EditCode\EditorCodeIDE\EditorCodeIDE\Pack-EditCode\img\folder-imag003.png" Stretch="UniformToFill" TileMode="Tile"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="Seach" Width="40" Height="40" Margin="5"   ToolTip="Поиск"  BorderBrush="Transparent" Foreground="White" Click="ClickButton">
+                    <Button.Background>
+                        <ImageBrush ImageSource="D:\EditCode\EditorCodeIDE\EditorCodeIDE\Pack-EditCode\img\magnifyingglass-imag008.png" Stretch="UniformToFill" TileMode="Tile"/>
+                    </Button.Background>
+                </Button>
+
+                <Button x:Name="RunAndDebug" Content=" " Width="40" Height="40" Margin="5"  ToolTip="Запуск и отладка" BorderBrush="Transparent" Foreground="White" Click="ClickButton">
+                    <Button.Background>
+                        <ImageBrush ImageSource="D:\EditCode\EditorCodeIDE\EditorCodeIDE\Pack-EditCode\img\play-imag004.png" Stretch="UniformToFill" TileMode="Tile"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="Pakes"  Width="40" Height="40" Margin="5"  ToolTip="Пакеты"  BorderBrush="Transparent" Foreground="{x:Null}" Click="ClickButton">
+                    <Button.Background>
+                        <ImageBrush ImageSource="D:\EditCode\EditorCodeIDE\EditorCodeIDE\Pack-EditCode\img\package-imag007.png" Stretch="UniformToFill" TileMode="Tile"/>
+                    </Button.Background>
+                </Button>
             </StackPanel>
 
             <!-- Дерево проекта -->
             <Border Background="#FF252526" Margin="0,0,5,0">
                 <GroupBox Header="Древо вашего проекта" Foreground="White" BorderBrush="#FF3E3E40" Background="#FF252526">
                     <TreeView Background="Transparent">
-                        <TreeViewItem Header="MyProgect [текстовый]" Foreground="White">
-                            <TreeViewItem Header="Test.txt" Foreground="White"/>
+                        <TreeViewItem x:Name="MainDirect" Header="MyProgect [текстовый]" Foreground="White">
+
                         </TreeViewItem>
                     </TreeView>
                 </GroupBox>
@@ -126,7 +142,8 @@
         <!-- Основная область с редактором -->
         <TabControl Grid.Row="1" Grid.Column="2" Background="Transparent" Margin="5">
             <!-- Вкладка редактора -->
-            <TabItem x:Name="Filer" Header="Test.txt" Background="#FF2D2D30" Foreground="White" BorderBrush="#FF3E3E40">
+            <TabItem x:Name="Filer" Width="100" Height="25" Header="Test.txt" Background="#FF2D2D30" Foreground="#FFB3B3B3" BorderBrush="#FF3E3E40">
+
                 <Grid>
                     <avalon:TextEditor 
                      x:Name="TextEditor"
@@ -143,14 +160,13 @@
             </TabItem>
 
             <!-- Вкладка пакетов -->
-            <TabItem Header="Pakes" Background="#FF2D2D30" Foreground="White" BorderBrush="#FF3E3E40">
+            <TabItem Header="Pakes" Background="#FF2D2D30" Foreground="#FF7B7B7B" BorderBrush="#FF3E3E40" Width="100">
                 <Grid Background="#FF1E1E1E">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="5"/>
                         <ColumnDefinition Width="300"/>
                     </Grid.ColumnDefinitions>
-
                     <!-- Левая часть - управление пакетами -->
                     <StackPanel Grid.Column="0" Margin="5">
                         <DockPanel Margin="0,0,0,10">
@@ -158,20 +174,72 @@
                             <Button x:Name="Refresh" Content="🔄" Width="20" Height="20" 
                                  Background="Transparent" BorderBrush="Transparent" Foreground="White"
                                  ToolTip="Обновить" HorizontalAlignment="Right"/>
-                            <Button x:Name="MenuAdder" Content="⚙️" Width="20" Height="20" 
-                                 Background="Transparent" BorderBrush="Transparent" Foreground="White"
-                                 ToolTip="Настройки" HorizontalAlignment="Right" Margin="5,0,0,0"/>
+                            <Button x:Name="MenuAdder" Width="20" Height="20" BorderBrush="Transparent" Foreground="White"
+                                 ToolTip="Настройки" HorizontalAlignment="Right" Margin="5,0,0,0">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="D:\EditCode\EditorCodeIDE\EditorCodeIDE\Pack-EditCode\img\settings-imag001.png"/>
+                                </Button.Background>
+                            </Button>
                         </DockPanel>
                         <TextBox Margin="0,0,0,10" Background="#FF2D2D30" Foreground="White" BorderBrush="#FF3E3E40"/>
 
                         <!-- Список пакетов -->
-                        <ListBox Background="Transparent" Foreground="White" BorderBrush="#FF3E3E40" Height="300">
-                            <ListBoxItem Content="FrameWorkAPI - Alfa 0-0-1"/>
-                            <ListBoxItem Content="Pack-EditCode - 0-0-1"/>
-                        </ListBox>
+                        <TreeView  Background="{x:Null}" BorderBrush="{x:Null}">
+                            <TreeViewItem Header="Магазин" Foreground="White" BorderBrush="White" OpacityMask="White" Background="{x:Null}">
+                                <TreeViewItem Name="UpdaetInfoLoad" Header="Загрузка данных от сервисов" Foreground="White"/>
+                            </TreeViewItem>
+                            <TreeViewItem Header="Устоновленные" Foreground="White" BorderBrush="Red" OpacityMask="#FFFFBB00">
+                                <ListBox Background="Transparent" Foreground="White" BorderBrush="#FF3E3E40" Height="300">
+                                    <ListBoxItem>
+                                        <Border x:Name="FreameWorkIPA" Width="360" Height="60">
+                                            <Border.BorderBrush>
+                                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                    <GradientStop Color="#FF300038"/>
+                                                    <GradientStop Color="#FF4200FF" Offset="1"/>
+                                                </LinearGradientBrush>
+                                            </Border.BorderBrush>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="170"/>
+                                                    <ColumnDefinition Width="170"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="30"/>
+                                                    <RowDefinition Height="30"/>
+                                                </Grid.RowDefinitions>
+                                                <TextBlock Text="FrameWorkAPI" Grid.Row="0" Grid.Column="0" FontSize="24"/>
+                                                <TextBlock Text="версия: 0.0.1" Grid.Row="1" Grid.Column="0" FontSize="7" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+                                            </Grid>
+                                        </Border>
+                                    </ListBoxItem>
+                                    <ListBoxItem>
+                                        <Border x:Name="PackEditCode" Width="360" Height="60">
+                                            <Border.BorderBrush>
+                                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                    <GradientStop Color="#FF300038"/>
+                                                    <GradientStop Color="#FF4200FF" Offset="1"/>
+                                                </LinearGradientBrush>
+                                            </Border.BorderBrush>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="170"/>
+                                                    <ColumnDefinition Width="170"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="30"/>
+                                                    <RowDefinition Height="30"/>
+                                                </Grid.RowDefinitions>
+                                                <TextBlock Text="PackEditCode" Grid.Row="0" Grid.Column="0" FontSize="24"/>
+                                                <TextBlock Text="версия: 0.0.1" Grid.Row="1" Grid.Column="0" FontSize="7" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+                                            </Grid>
+                                        </Border>
+                                    </ListBoxItem>
+                                </ListBox>
+                            </TreeViewItem>
+                        </TreeView>
+
                     </StackPanel>
 
-                    <!-- Разделитель внутри вкладки пакетов -->
                     <GridSplitter Grid.Column="1" 
                               HorizontalAlignment="Stretch" 
                               VerticalAlignment="Stretch"
@@ -191,7 +259,7 @@
                         </Border>
                         <Border BorderBrush="#FF3E3E40" BorderThickness="1" Height="350">
                             <!-- WebBrowser будет здесь -->
-                            <WebBrowser Source="https://github.com/R0ma4/EditCode"  VerticalAlignment="Center">
+                            <WebBrowser   VerticalAlignment="Center">
 
                             </WebBrowser>
                         </Border>
@@ -230,7 +298,7 @@
             <GroupBox Header="Масштаб" Foreground="White" BorderBrush="#FF3E3E40" Background="#FF252526" Margin="0,10,0,0">
                 <StackPanel>
                     <Slider x:Name="ZoomSlider" 
-                        Minimum="50" 
+                        Minimum="1" 
                         Maximum="500" 
                         Value="100" 
                         TickFrequency="10"
@@ -242,12 +310,9 @@
                            HorizontalAlignment="Center"
                            FontSize="12"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button x:Name="ZoomInBtn" Content="+" Width="25" Height="25" Margin="2"
-                            />
-                        <Button x:Name="ZoomOutBtn" Content="-" Width="25" Height="25" Margin="2"
-                            />
-                        <Button x:Name="ZoomResetBtn" Content="⟲" Width="25" Height="25" Margin="2"
-                            />
+                        <Button x:Name="ZoomInBtn" Content="+" Width="25" Height="25" Margin="2" Click="ClickButton" />
+                        <Button x:Name="ZoomOutBtn" Content="-" Width="25" Height="25" Margin="2" Click="ClickButton"/>
+                        <Button x:Name="ZoomResetBtn" Content="⟲" Width="25" Height="25" Margin="2" Click="ClickButton"/>
                     </StackPanel>
                 </StackPanel>
             </GroupBox>
@@ -263,7 +328,7 @@
 
         <!-- Терминал -->
         <TabControl Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5" Background="Transparent" Margin="5,0,5,5">
-            <TabItem Header="Console" Background="#FF2D2D30" Foreground="White" BorderBrush="#FF3E3E40">
+            <TabItem Header="Console" Background="#FF2D2D30"  Foreground="#FFB3B3B3" BorderBrush="#FF3E3E40">
                 <Grid Background="#FF0C0C0C">
                     <ListBox x:Name="TermanalBox" Background="Black">
                         <ListBoxItem>
@@ -273,7 +338,7 @@
                 </Grid>
             </TabItem>
 
-            <TabItem Header="Termenal" Background="#FF2D2D30" Foreground="White" BorderBrush="#FF3E3E40">
+            <TabItem Header="Termenal" Background="#FF2D2D30"  Foreground="#FFB3B3B3" BorderBrush="#FF3E3E40">
                 <Grid Background="#FF0C0C0C">
                     <TextBox x:Name="TerminalOutput" 
                          FontFamily="Consolas" 
@@ -283,11 +348,11 @@
                          IsReadOnly="False"
                          VerticalScrollBarVisibility="Auto"
                          TextWrapping="Wrap"
-                         Text="&#x0a;&#x0a;C:\Users\User&gt; _"/>
+                         Text="C:\Users\User&gt;"/>
                 </Grid>
             </TabItem>
 
-            <TabItem Header="PowerShell" Background="#FF2D2D30" Foreground="White" BorderBrush="#FF3E3E40">
+            <TabItem Header="PowerShell" Background="#FF2D2D30"  Foreground="#FFB3B3B3" BorderBrush="#FF3E3E40">
                 <Grid Background="#FF012456">
                     <TextBox x:Name="PowerShellOutput" 
                          FontFamily="Consolas" 
@@ -298,6 +363,34 @@
                          VerticalScrollBarVisibility="Auto"
                          TextWrapping="Wrap"
                          Text="Windows PowerShell&#x0a;Copyright (C) Microsoft Corporation. All rights reserved.&#x0a;&#x0a;PS C:\Users\User&gt; _"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Ввод / вывод" Background="#FF2D2D30" Foreground="#FFB3B3B3" BorderBrush="{x:Null}" ContextMenuOpening="TabItem_ContextMenuOpening">
+                <Grid Background="#FF00040C">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40*"/>
+                        <RowDefinition Height="150*"/>
+                    </Grid.RowDefinitions>
+                    <Border Width="1045" Grid.Row="0" Margin="12,0" >
+                        <StackPanel Orientation="Horizontal" Background="White">
+                            <Border x:Name="ErrorPanel" Width="40" Height="20" Background="#FFB9B9B9" Margin="12,0" HorizontalAlignment="Left" >
+                                <Grid>
+                                    <Image x:Name="ImegeError" Height="15" Width="15" HorizontalAlignment="Left" OpacityMask="White" Source="D:\EditCode\EditorCodeIDE\EditorCodeIDE\Pack-EditCode\img\error-imag009.png"/>
+                                    <TextBlock x:Name="CointError" Text="1" HorizontalAlignment="Right" Foreground="White"/>
+                                </Grid>
+                            </Border>
+                            <Border x:Name="WarningPanel" Width="40" Height="20" Background="#FFB9B9B9" Margin="12,0" HorizontalAlignment="Left">
+                                <Grid>
+                                    <Image x:Name="ImegeWarning" Height="15" Width="15" HorizontalAlignment="Left" OpacityMask="White" Source="D:\EditCode\EditorCodeIDE\EditorCodeIDE\Pack-EditCode\img\warning-imag010.png"/>
+                                    <TextBlock x:Name="CointWarning" Text="1" HorizontalAlignment="Right" Foreground="White"/>
+                                </Grid>
+                            </Border>
+                        </StackPanel>
+                    </Border>
+                    <ListView x:Name="ErrorList" Background="{x:Null}" Foreground="Red" Grid.Row="1">
+
+                    </ListView>
                 </Grid>
             </TabItem>
         </TabControl>
@@ -312,14 +405,18 @@
 
                 <!-- Левая часть статус бара -->
                 <DockPanel Grid.Column="0">
-                    <Button Content="🔧" Width="20" Height="20" Background="Transparent" BorderBrush="Transparent" Foreground="White"/>
-                    <TextBlock Foreground="White" Text="Готов" VerticalAlignment="Center" Margin="10,0"/>
+                    <Button Content=" " Width="20" Height="20" BorderBrush="Transparent" Foreground="White">
+                        <Button.Background>
+                            <ImageBrush ImageSource="D:\EditCode\EditorCodeIDE\EditorCodeIDE\Pack-EditCode\img\settings-imag001.png"/>
+                        </Button.Background>
+                    </Button>
+                    <TextBlock x:Name="TextRedender" Foreground="White" Text="Готов" VerticalAlignment="Center" Margin="10,0"/>
                 </DockPanel>
 
                 <!-- Правая часть статус бара -->
                 <DockPanel Grid.Column="1">
                     <TextBlock Foreground="White" Text="UniCode: UNI-8" VerticalAlignment="Center" Margin="0,0,10,0"/>
-                    <TextBlock x:Name="languageType" Foreground="White" Text="Язык Проекта: C#" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                    <TextBlock x:Name="languageType" Foreground="White" Text="Язык Проекта:  " VerticalAlignment="Center" Margin="0,0,10,0"/>
                     <TextBlock Foreground="White" Text="Язык: Русский" VerticalAlignment="Center" Margin="0,0,10,0"/>
                     <TextBlock x:Name="CursorPosition" Foreground="White" Text="Ln 1, Col 1" VerticalAlignment="Center"/>
                 </DockPanel>

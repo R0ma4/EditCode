@@ -30,37 +30,12 @@ namespace EditorCodeIDE
             
             InitializeComponent();
             
-            pageMain.MainWindow = this;
+            pageMain._MainWindow = this;
             MainControlPage.Content = new Pages.PageMain();
 
         }
 
-        // Масштабирование
-        private void ZoomSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            //_currentZoom = e.NewValue / 100.0;
-            //ZoomText.Text = $"{e.NewValue}%";
-            //
-            //// Применяем масштаб к редактору
-            //TextEditor.FontSize = BaseFontSize * _currentZoom;
-        }
-
-        private void ZoomIn_Click(object sender, RoutedEventArgs e)
-        {
-          //  ZoomSlider.Value = System.Math.Min(ZoomSlider.Maximum, ZoomSlider.Value + 10);
-        }
-
-        private void ZoomOut_Click(object sender, RoutedEventArgs e)
-        {
-          //  ZoomSlider.Value = System.Math.Max(ZoomSlider.Minimum, ZoomSlider.Value - 10);
-        }
-
-        private void ZoomReset_Click(object sender, RoutedEventArgs e)
-        {
-          //  ZoomSlider.Value = 100;
-        }
-
-
+       
         
     }
 }

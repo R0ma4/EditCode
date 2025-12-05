@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
+using EditorCodeIDE.Pack_EditCode.languageRedactors.PYHTON;
 using Microsoft.CodeAnalysis.Scripting;
 using IronPython.Hosting;
 using Jint;
@@ -15,13 +16,31 @@ using Microsoft.CodeAnalysis.CSharp;
 using System.Reflection;
 
 // оброботчики
-using EditorCodeIDE.Pack_EditCode.language_redactors.CSarp;
+using EditorCodeIDE.Pack_EditCode.languageRedactors.CSarp;
 
 namespace EditorCodeIDE.Pack_EditCode
 {
     public class CodeExecutionService
     {
+        #region Переменные Кампилятора.
+
+        /// <summary> Текст совершонной Ошибки </summary>
+        public string ErrorText { get; private set; }
+        /// <summary> Текст совершонной Предупреждения </summary>
+        public string WaringText { get; private set; }
+        /// <summary> Текст совершонной Сообщения </summary>
+        public string MessageText { get; private set; }
+
+        /// <summary> Строка совершонной Ошибки </summary>
+        public int LineError { get; private set; } = -1;
+
+        /// <summary> Столбец / символ совершонной Ошибки </summary>
+        public int ColumError { get; private set; } = 0;
+
+
+        #endregion
         languageCShaerp languageCShaerp = new languageCShaerp();
+        PyhtonComplit pyhtonComplit = new PyhtonComplit();  
         public enum Language
         {
             Text,
@@ -29,7 +48,50 @@ namespace EditorCodeIDE.Pack_EditCode
             CSharp,
             Cpp,
             Python,
-            JavaScript
+            JavaScript,
+            XMAL,
+            YAML,
+            OcScrept
+        }
+
+        public void CompilatorErrorInfo(string user_scrept, Language language) 
+        {
+            string ErrorInfo = string.Empty;
+            switch (language)
+            {
+                case Language.CSharp:
+                    languageCShaerp.CheckForErrorsBackground(user_scrept);
+                    LineError = languageCShaerp.ErrorCoint;
+                    ErrorText = languageCShaerp.ErrorMesaege;
+                    Console.WriteLine($"[Компилятор]Обработана ошибка: [{LineError}] | Error^{ErrorText}");
+                    break;
+                case Language.Cpp:
+                    ErrorText = "Код: LPCP 004. В данной нерсии, нет кампилятора [C++]";
+                    break;
+                case Language.Python:
+                    Console.WriteLine("оброботчик => Код: LPCP 004. В данной нерсии, нет кампилятора [Python]");
+                    ErrorText = "Код: LPCP 004. В данной нерсии, нет кампилятора [Python]";
+                    break;
+                case Language.JavaScript:
+                    ErrorText = "Код: LPCP 004. В данной нерсии, нет кампилятора [JavaScript]";
+                    break;
+                case Language.SQL:
+                    ErrorText = $"Код: LPCP 004. В данной нерсии, нет кампилятора [SQL]";
+                    break;
+                case Language.Text:
+                    ErrorText = null;
+                    LineError = 0;
+                    break;
+                case Language.XMAL:
+                    ErrorText = $"Код: LPCP 004. В данной нерсии, нет кампилятора [XMAL]";
+                     break;
+                case Language.YAML:
+                    ErrorText = $"Код: LPCP 004. В данной нерсии, нет кампилятора [YAML]";
+                    break;
+                default:
+                    ErrorText = "Код: LPCP 004. (Ни известный язык оброботки)";
+                    break;
+            }
         }
 
         public async Task<string> ExecuteCodeAsync(string code, Language language)
@@ -41,15 +103,19 @@ namespace EditorCodeIDE.Pack_EditCode
                 case Language.Cpp:
                     return await ExecuteCppAsync(code);
                 case Language.Python:
-                    return await ExecutePythonAsync(code);
+                    return await pyhtonComplit.ExecuteCSharpAsync(code);
                 case Language.JavaScript:
                     return await ExecuteJavaScriptAsync(code);
+                case Language.YAML:
+                    return null;
+                case Language.XMAL:
+                    return null;
+                case Language.SQL:
+                    return null;
                 default:
                     return "не изветсный пораметор рброботки!";
             }
         }
-
-       
 
         #region Other Languages Execution - Остальные языки без изменений
 
@@ -128,6 +194,8 @@ namespace EditorCodeIDE.Pack_EditCode
         {
             return await reader.ReadToEndAsync();
         }
+
+        #region Старые компиляторы
 
         // Python через IronPython
         private Task<string> ExecutePythonAsync(string code)
@@ -212,6 +280,9 @@ namespace EditorCodeIDE.Pack_EditCode
                 return false;
             }
         }
+
+
+        #endregion
 
         #endregion
     }

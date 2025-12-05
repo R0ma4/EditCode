@@ -144,6 +144,7 @@ D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\EditorCodeIDE.exe
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\EditorCodeIDE.pdb
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\Acornima.dll
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\CommunityToolkit.Mvvm.dll
+D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\ConsoleControlAPI.dll
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\ICSharpCode.AvalonEdit.dll
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\IronPython.dll
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\IronPython.Modules.dll
@@ -175,6 +176,7 @@ D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\Testably.Abstractions.FileSyst
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\Acornima.xml
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\CommunityToolkit.Mvvm.pdb
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\CommunityToolkit.Mvvm.xml
+D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\ConsoleControlAPI.xml
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\ICSharpCode.AvalonEdit.xml
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\IronPython.xml
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\IronPython.Modules.xml
@@ -263,6 +265,8 @@ D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\EditorCodeIDE.csproj.AssemblyR
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\CreateFile.g.cs
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\MainWindow.g.cs
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\Pages\PageMain.g.cs
+D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\Pages\WindowCreateProject.g.cs
+D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\Pages\WindowEditCodeIDE.g.cs
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\App.g.cs
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\EditorCodeIDE_Content.g.cs
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\EditorCodeIDE_MarkupCompile.cache
@@ -270,6 +274,8 @@ D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\EditorCodeIDE_MarkupCompile.lr
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\CreateFile.baml
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\MainWindow.baml
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\Pages\PageMain.baml
+D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\Pages\WindowCreateProject.baml
+D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\Pages\WindowEditCodeIDE.baml
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\EditorCodeIDE.g.resources
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\EditorCodeIDE.Properties.Resources.resources
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\EditorCodeIDE.csproj.GenerateResource.cache
@@ -278,9 +284,5 @@ D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\EditorCodeIDE.csproj.CoreCompi
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\EditorCo.91251214.Up2Date
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\EditorCodeIDE.exe
 D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\EditorCodeIDE.pdb
-D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\Pages\WindowEditCodeIDE.g.cs
-D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\Pages\WindowEditCodeIDE.baml
-D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\Pages\WindowCreateProject.g.cs
-D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\Pages\WindowCreateProject.baml
-D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\ConsoleControlAPI.dll
-D:\EditCode\EditorCodeIDE\EditorCodeIDE\bin\Debug\ConsoleControlAPI.xml
+D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\Pages\SettengsWindow.g.cs
+D:\EditCode\EditorCodeIDE\EditorCodeIDE\obj\Debug\Pages\SettengsWindow.baml

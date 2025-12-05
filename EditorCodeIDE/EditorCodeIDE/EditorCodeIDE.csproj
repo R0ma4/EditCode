@@ -176,6 +176,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\SettengsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\WindowCreateProject.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -187,10 +191,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pack-EditCode\CodeExecutionService.cs" />
-    <Compile Include="Pack-EditCode\language-redactors\languageCShaerp.cs" />
+    <Compile Include="Pack-EditCode\languageRedactors\CSharp\languageCShaerp.cs" />
+    <Compile Include="Pack-EditCode\languageRedactors\PYHTON\PyhtonComplit.cs" />
     <Compile Include="Pack-EditCode\ProjectSystem.cs" />
+    <Compile Include="Pack-EditCode\RegisterSetteng\RegisterSetteng.cs" />
     <Compile Include="Pages\PageMain.xaml.cs">
       <DependentUpon>PageMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SettengsWindow.xaml.cs">
+      <DependentUpon>SettengsWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\WindowCreateProject.xaml.cs">
       <DependentUpon>WindowCreateProject.xaml</DependentUpon>
@@ -869,6 +878,12 @@
     <Content Include="lib\_weakrefset.py" />
     <Content Include="lib\__future__.py" />
     <Content Include="lib\__phello__.foo.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pack-EditCode\languageRedactors\CPlusPlus\" />
+    <Folder Include="Pack-EditCode\languageRedactors\Web\" />
+    <Folder Include="Pack-EditCode\languageRedactors\XML\" />
+    <Folder Include="Pack-EditCode\languageRedactors\YAMI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets" Condition="Exists('..\packages\CommunityToolkit.Mvvm.8.4.0\build\CommunityToolkit.Mvvm.targets')" />
