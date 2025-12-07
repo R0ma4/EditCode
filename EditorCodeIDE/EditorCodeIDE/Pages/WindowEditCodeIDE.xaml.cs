@@ -102,7 +102,7 @@ namespace EditorCodeIDE.Pages
 
         ~WindowEditCodeIDE()
         {
-            MessageBox.Show("");
+            MessageBox.Show("Выход");
             _errorCheckTimer.Stop();
         }
 

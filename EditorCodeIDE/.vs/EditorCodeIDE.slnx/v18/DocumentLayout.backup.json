@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pages\\windoweditcodeide.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|d:\\editcode\\editorcodeide\\editorcodeide\\pages\\settengswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|D:\\EditCode\\EditorCodeIDE\\editorcodeide\\pages\\settengswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pages\\settengswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pages\\windoweditcodeide.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|d:\\editcode\\editorcodeide\\editorcodeide\\pages\\settengswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|D:\\EditCode\\EditorCodeIDE\\editorcodeide\\pages\\settengswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6449AC3C-5126-4614-8221-E08A81D90343}|EditorCodeIDE\\EditorCodeIDE.csproj|solutionrelative:editorcodeide\\pages\\settengswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,31 +75,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SettengsWindow.xaml.cs",
-              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\SettengsWindow.xaml.cs",
-              "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\SettengsWindow.xaml.cs",
-              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\SettengsWindow.xaml.cs",
-              "RelativeToolTip": "EditorCodeIDE\\Pages\\SettengsWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T10:28:08.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SettengsWindow.xaml",
-              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\SettengsWindow.xaml",
-              "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\SettengsWindow.xaml",
-              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\SettengsWindow.xaml",
-              "RelativeToolTip": "EditorCodeIDE\\Pages\\SettengsWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-05T10:27:28.629Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -123,8 +98,7 @@
               "RelativeToolTip": "EditorCodeIDE\\Pack-EditCode\\languageRedactors\\CSharp\\languageCShaerp.cs",
               "ViewState": "AgIAAG0AAAAAAAAAAAAUwH8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T11:46:59.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-30T11:46:59.904Z"
             },
             {
               "$type": "Document",
@@ -135,8 +109,7 @@
               "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\WindowCreateProject.xaml",
               "RelativeToolTip": "EditorCodeIDE\\Pages\\WindowCreateProject.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-29T16:50:25.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T16:50:25.095Z"
             },
             {
               "$type": "Document",
@@ -148,8 +121,7 @@
               "RelativeToolTip": "EditorCodeIDE\\Pages\\WindowCreateProject.xaml.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAowHcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T16:50:23.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-29T16:50:23.251Z"
             },
             {
               "$type": "Document",
@@ -172,8 +144,43 @@
               "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\PageMain.xaml",
               "RelativeToolTip": "EditorCodeIDE\\Pages\\PageMain.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-28T13:11:48.077Z",
+              "WhenOpened": "2025-11-28T13:11:48.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WindowEditCodeIDE.xaml.cs",
+              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml.cs",
+              "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml.cs",
+              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml.cs",
+              "RelativeToolTip": "EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAQwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T06:05:16.751Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SettengsWindow.xaml",
+              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\SettengsWindow.xaml",
+              "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\SettengsWindow.xaml",
+              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\SettengsWindow.xaml",
+              "RelativeToolTip": "EditorCodeIDE\\Pages\\SettengsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T10:27:28.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SettengsWindow.xaml.cs",
+              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\SettengsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\SettengsWindow.xaml.cs",
+              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\SettengsWindow.xaml.cs",
+              "RelativeToolTip": "EditorCodeIDE\\Pages\\SettengsWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T10:28:08.102Z"
             },
             {
               "$type": "Document",
@@ -185,8 +192,7 @@
               "RelativeToolTip": "EditorCodeIDE\\Pages\\PageMain.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T06:00:27.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-28T06:00:27.924Z"
             },
             {
               "$type": "Document",
@@ -197,21 +203,7 @@
               "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml",
               "RelativeToolTip": "EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-26T12:47:40.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WindowEditCodeIDE.xaml.cs",
-              "DocumentMoniker": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml.cs",
-              "RelativeDocumentMoniker": "EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml.cs",
-              "ToolTip": "D:\\EditCode\\EditorCodeIDE\\EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml.cs",
-              "RelativeToolTip": "EditorCodeIDE\\Pages\\WindowEditCodeIDE.xaml.cs",
-              "ViewState": "AgIAAPQAAAAAAAAAAADwvwUBAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T06:05:16.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T12:47:40.676Z"
             },
             {
               "$type": "Document",
@@ -247,8 +239,7 @@
               "RelativeToolTip": "EditorCodeIDE\\Pack-EditCode\\CodeExecutionService.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAAAFIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T03:56:31.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T03:56:31.369Z"
             }
           ]
         }
